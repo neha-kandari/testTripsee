@@ -39,34 +39,12 @@ const ThankYouContent = () => {
         <p className="text-lg text-gray-600 mb-2 leading-relaxed">
           You&apos;re just one step away from your dream trip! 🌍
         </p>
-        <p className="text-sm text-gray-400 mb-10">
+        <p className="text-sm text-gray-400 mb-8">
           Click the button below to send your details to us on WhatsApp.
         </p>
 
-        {/* Steps card */}
-        <div className="bg-white border border-orange-100 rounded-2xl p-6 mb-8 text-left shadow-lg">
-          <h2 className="text-base font-semibold text-gray-700 mb-4 flex items-center gap-2">
-            <span className="w-5 h-5 rounded-full bg-orange-500 text-white text-xs flex items-center justify-center font-bold">i</span>
-            What happens next?
-          </h2>
-          <ul className="space-y-3 text-sm text-gray-600">
-            <li className="flex items-start gap-3">
-              <span className="w-6 h-6 rounded-full bg-orange-500 text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
-              <span>Click the button below to open WhatsApp</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="w-6 h-6 rounded-full bg-orange-500 text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
-              <span>Send the pre-filled message with your requirements</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="w-6 h-6 rounded-full bg-orange-500 text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
-              <span>Our travel experts will get back to you with a personalized plan!</span>
-            </li>
-          </ul>
-        </div>
-
         {/* CTA button */}
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-10">
           {/* Opens WhatsApp with the pre-filled message from the form */}
           <a
             href={whatsappUrl}
@@ -79,6 +57,28 @@ const ThankYouContent = () => {
             </svg>
             Send Details on WhatsApp
           </a>
+        </div>
+
+        {/* Steps card */}
+        <div className="bg-white border border-orange-100 rounded-2xl p-6 mb-8 text-left shadow-lg">
+          <h2 className="text-base font-semibold text-gray-700 mb-4 flex items-center gap-2">
+            <span className="w-5 h-5 rounded-full bg-orange-500 text-white text-xs flex items-center justify-center font-bold">i</span>
+            What happens next?
+          </h2>
+          <ul className="space-y-3 text-sm text-gray-600">
+            <li className="flex items-start gap-3">
+              <span className="w-6 h-6 rounded-full bg-orange-500 text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
+              <span>Click the button above to open WhatsApp</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-6 h-6 rounded-full bg-orange-500 text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
+              <span>Send the pre-filled message with your requirements</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-6 h-6 rounded-full bg-orange-500 text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
+              <span>Our travel experts will get back to you with a personalized plan!</span>
+            </li>
+          </ul>
         </div>
 
         {/* Branding footer */}
